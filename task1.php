@@ -26,9 +26,7 @@ printEvenNumbers(1, 20, 2);
 
 // function printEvenNumbersUsingForLoop($start, $end, $step)
 // {
-
 //     for ($i = $start; $i <= $end; $i++) {
-
 //         if ($i % $step == 0) {
 //             echo $i++;
 //             echo "\n";
