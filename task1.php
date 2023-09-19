@@ -1,6 +1,4 @@
 <?php
-
-
 function printEvenNumbers($start, $end, $step)
 {
     echo "Using for loop: \n";
