@@ -1,36 +1,33 @@
 <?php
 
-// Using a for loop
-function printEvenNumbersFor(int $start, int $end, int $step)
+
+function printEvenNumbers($start, $end, $step)
 {
-    echo "Using for loop: ";
+    echo "Using for loop: \n";
+    if ($start !== 0 && $start % 2 !== 0) {
+        $start = ($start + 1);
+    }
     for ($i = $start; $i <= $end; $i += $step) {
-        if ($i % 2 == 1) {
-            $i = 2;
-        }
         if ($i % 2 == 0) {
-            echo $i . " ";
+            echo "{$i} \n";
         }
     }
-    echo "\n";
 }
-printEvenNumbersFor(1, 20, 2);
 
+printEvenNumbers(1, 20, 2);
 
-
-// Using a while loop
+// // Using a while loop
 function printEvenNumbersWhile(int $start, int $end, int $step)
 {
-    echo "Using while loop: ";
+    echo "Using while loop: \n";
 
     while ($start <= $end) {
 
-        if ($start % 2 == 1) {
-            $start = 2;
+        if ($start !== 0 && $start % 2 !== 0) {
+            $start = ($start + 1);
         }
-        if ($start % 2 == 0) {
-            echo $start . " ";
-        }
+
+        echo "{$start} \n";
 
         $start += $step;
     }
@@ -42,16 +39,16 @@ printEvenNumbersWhile(1, 20, 2);
 // Using a do-while loop
 function printEvenNumbersDoWhile($start, $end, $step)
 {
-    echo "Using do-while loop: ";
+    echo "Using do-while loop: \n";
     do {
-        if ($start % 2 == 1) {
-            $start = 2;
+        if ($start !== 0 && $start % 2 !== 0) {
+            $start = ($start + 1);
         }
-        if ($start % 2 == 0) {
-            echo $start . " ";
-        }
+
+        echo "{$start} \n";
+
         $start += $step;
     } while ($start <= $end);
     echo "\n";
 }
-printEvenNumbersDoWhile(2, 20, 2);
+printEvenNumbersDoWhile(1, 20, 2);
