@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * Using a for loop
+ * 
+ * @param $start 
+ * @param $end
+ * @param $step
+ * return: void 
+ * 
+ * */
 function printEvenNumbers($start, $end, $step)
 {
     echo "Using for loop: \n";
@@ -14,7 +24,30 @@ function printEvenNumbers($start, $end, $step)
 
 printEvenNumbers(1, 20, 2);
 
-// // Using a while loop
+// function printEvenNumbersUsingForLoop($start, $end, $step)
+// {
+
+//     for ($i = $start; $i <= $end; $i++) {
+
+//         if ($i % $step == 0) {
+//             echo $i++;
+//             echo "\n";
+//         }
+//     }
+// }
+
+// printEvenNumbersUsingForLoop(1, 20, 2);
+
+
+/**
+ * Using a while loop
+ * 
+ * @param $start 
+ * @param $end
+ * @param $step
+ * return: void 
+ * 
+ * */
 function printEvenNumbersWhile(int $start, int $end, int $step)
 {
     echo "Using while loop: \n";
@@ -33,8 +66,15 @@ function printEvenNumbersWhile(int $start, int $end, int $step)
 }
 printEvenNumbersWhile(1, 20, 2);
 
-
-// Using a do-while loop
+/**
+ * Using a do-while loop
+ * 
+ * @param $start 
+ * @param $end
+ * @param $step
+ * return: void 
+ * 
+ * */
 function printEvenNumbersDoWhile($start, $end, $step)
 {
     echo "Using do-while loop: \n";
